@@ -32,7 +32,9 @@ public class RootApplicationContextConfig {
             return new HikariDataSource();
         } else {
             HikariConfig config = new HikariConfig();
+            System.out.println("=================== dbUrl : " + dbUrl);
             config.setJdbcUrl(dbUrl);
+            config.setDriverClassName("com.mysql.jdbc.Driver");
             return new HikariDataSource(config);
         }
     }
