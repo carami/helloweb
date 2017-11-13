@@ -23,20 +23,14 @@ import java.util.List;
 
 @Configuration
 public class RootApplicationContextConfig {
-    @Value("spring.datasource.url")
-    String dbUrl;
-
     @Bean
     public DataSource dataSource() throws SQLException {
-        if (dbUrl == null || dbUrl.isEmpty()) {
-            return new HikariDataSource();
-        } else {
-            HikariConfig config = new HikariConfig();
-            System.out.println("=================== dbUrl : " + dbUrl);
-            config.setJdbcUrl(dbUrl);
-            config.setDriverClassName("com.mysql.jdbc.Driver");
-            return new HikariDataSource(config);
-        }
+        String dbUrl = System.getenv("JDBC_DATABASE_URL");
+        HikariConfig config = new HikariConfig();
+        System.out.println("=================== dbUrl : " + dbUrl);
+        config.setJdbcUrl(dbUrl);
+        config.setDriverClassName("com.mysql.jdbc.Driver");
+        return new HikariDataSource(config);
     }
     @Bean("restTemplate")
     public RestTemplate mailRestTemplate() {
