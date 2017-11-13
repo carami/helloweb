@@ -1,0 +1,1 @@
+web: java -jar target/helloweb-1.0.jar

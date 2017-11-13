@@ -1,0 +1,30 @@
+[
+	{
+		"img": {"alt": "이미지 설명", "src": "./resource/a.png"}, 
+		"title" :"다이나 코어 연극1", 
+		"addr":"예술의 전당", 
+		"desc": "이 연극은....", 
+		"url": "/product/123"
+	},
+	{
+		"img": {"alt": "이미지 설명", "src": "./resource/a.png"},
+		"title" :"다이나 코어 연극2",
+		"addr":"예술의 전당",
+		"desc": "이 연극은....",
+		"url": "/product/123"
+	},
+	{
+		"img": {"alt": "이미지 설명", "src": "./resource/a.png"},
+		"title" :"다이나 코어 연극3",
+		"addr":"예술의 전당",
+		"desc": "이 연극은....",
+		"url": "/product/123"
+	},
+	{
+		"img": {"alt": "이미지 설명", "src": "./resource/a.png"},
+		"title" :"다이나 코어 연극4",
+		"addr":"예술의 전당",
+		"desc": "이 연극은....",
+		"url": "/product/123"
+	}
+]
