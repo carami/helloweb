@@ -6,6 +6,7 @@
   <groupId>sunnyvale.examples</groupId>
   <artifactId>helloweb</artifactId>
   <version>1.0</version>
+  <packaging>war</packaging>
 
   <properties>
     <jdk-version>1.8</jdk-version>
