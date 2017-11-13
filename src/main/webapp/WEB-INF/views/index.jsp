@@ -9,5 +9,12 @@
 
 <h1>hello world!</h1>
 
+<br><br>
+
+<c:forEach items="${records}"
+           var="record">
+    <c:out value="${record}" /> <br />
+</c:forEach>
+
 </body>
 </html>
