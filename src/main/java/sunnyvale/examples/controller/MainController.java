@@ -16,7 +16,7 @@ public class MainController {
     @Autowired
     DataSource dataSource;
 
-    @GetMapping("/test")
+    @GetMapping("/")
     public String getCategoryList(Model model){
 
         try(Connection connection = dataSource.getConnection()) {
